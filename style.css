@@ -1,0 +1,38 @@
+body{
+    font-family: 'Arial';
+}
+
+
+.div2{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color:#FF2400;
+    border: 2px solid #000000;
+    margin-bottom: 20px;
+    }
+
+    .div1{
+        width:100px;
+        height:100px;
+        background-color:#FF2400;
+        border: 2px solid #000000;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        }
+
+        .container {
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+            
+          }
+    
+        .div1 {
+          flex: 0 1 20%;
+        
+          }
+
+    

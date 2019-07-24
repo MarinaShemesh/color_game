@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marina Game_1</title>
+
+
+</head>
+<body>
+
+    <div> <h1>This is div 1</h1>
+        <div>           
+                <button onclick="Loadcolor()"> Get Color </button>
+                <p id="colorhere" >This is the first color</p>
+        </div>
+    </div>
+
+
+  
+
+    <div>
+            <style>
+                    #div2{
+                        width:100px;
+                        height:100px;
+                        background-color:#FF2400;
+                    }
+                    </style>
+           
+        
+        <h1>This is div 2</h1>
+        <div id='div2'>           
+           
+        </div>
+    </div>
+
+
+
+
+
+        <script>
+
+                function Loadcolor(){
+                let colors = new Array('blue', 'green','red','yellow','pink',
+                'orange','purple','black','white','grey');
+
+                let newcolor = Math.floor(Math.random() * colors.length);
+
+                document.getElementById('colorhere').innerHTML = colors[newcolor]; 
+
+                let divColor = colors[newcolor];
+
+                console.log('colors[newcolor]:', colors[newcolor]);
+                console.log('divColor:', colors[newcolor]);
+             
+            }
+
+
+            document.getElementById("div2").style.backgroundColor="#000000"; 
+
+        </script>
+
+    
+</body>
+</html>
+
+<!-- https://codepen.io/pattie566/pen/MowYee/ -->

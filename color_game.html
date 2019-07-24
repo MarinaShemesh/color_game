@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marina Game</title>
+
+
+</head>
+<body>
+
+    <h1>This is the header</h1>
+        <div>
+
+            <button id="my_id"></button>
+        </div>
+
+        <script>
+            let counter = 0;
+            let colors = ['blue', 'green', 'red', 'yellow', 'pink', 'orange', 'purple'];
+            let my_button = document.getElementById('my_id');
+           
+
+                function next_color()
+                {
+                    my_button.innerHTML = colors[counter % colors.length];
+                    counter += 1;
+                }
+                
+
+                setInterval(next_color, 1000);
+                        
+        </script>
+
+<!-- <script>
+        let counter = 0;
+        let colors = ['blue', 'green', 'red', 'yellow', 'pink', 'orange', 'purple'];
+        let my_div = document.getElementById('my_id');//is this correct for button?
+        let button = document.qgetElementById('button');
+       
+        button.onclick = function (){
+            function next_color()
+            {
+                my_div.innerHTML = colors[counter % colors.length];
+                counter += 1;
+            }
+            
+
+            
+        }
+                    
+    </script> -->
+    
+</body>
+</html>
+
+<!-- https://codepen.io/pattie566/pen/MowYee/ -->
